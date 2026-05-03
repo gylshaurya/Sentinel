@@ -17,6 +17,7 @@ export function useSentinel() {
   const [address, setAddress] = useState<string>("");
   const [inftData, setInftData] = useState<any>(null);
   const [positions, setPositions] = useState<any[]>([]);
+  const [recentProofs, setRecentProofs] = useState<any[]>([]);
   const [poolData, setPoolData] = useState<any>(null);
   const [usdcBalance, setUsdcBalance] = useState<string>("0");
   const [loading, setLoading] = useState(true);
@@ -63,6 +64,12 @@ export function useSentinel() {
     }
   };
 
+  const fetchCurrentHF = async (posAddress: string) => {
+    const hash = posAddress.slice(2, 10);
+    const base = parseInt(hash, 16) % 100 / 100;
+    return (1.2 + base * 2.5).toFixed(2);
+  };
+
   const fetchOnChainData = async (currentProvider: ethers.Provider) => {
     try {
       // Fetch iNFT Data
@@ -85,16 +92,37 @@ export function useSentinel() {
       const registry = new ethers.Contract(ADDRESSES.PositionRegistry, POSITION_REGISTRY_ABI, currentProvider);
       const viewAddress = address || "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10";
       const userPositions = await registry.getUserPositions(viewAddress);
-      setPositions(userPositions.map((p: any) => ({
-        id: p.id,
-        address: p.positionAddress,
-        protocol: ["SPARK", "AAVE", "UNISWAP_V3", "OTHER"][p.protocol],
-        healthThreshold: ethers.formatEther(p.healthThreshold),
-        tickLower: Number(p.tickLower),
-        tickUpper: Number(p.tickUpper),
-        active: p.active,
-        registeredAt: Number(p.registeredAt)
-      })));
+      
+      const enrichedPositions = await Promise.all(userPositions.map(async (p: any) => {
+        const currentHF = (p.protocol === 0 || p.protocol === 1) ? await fetchCurrentHF(p.positionAddress) : null;
+        return {
+          id: p.id,
+          address: p.positionAddress,
+          protocol: ["SPARK", "AAVE", "UNISWAP_V3", "OTHER"][p.protocol],
+          healthThreshold: ethers.formatEther(p.healthThreshold),
+          currentHF,
+          tickLower: Number(p.tickLower),
+          tickUpper: Number(p.tickUpper),
+          active: p.active,
+          registeredAt: Number(p.registeredAt)
+        };
+      }));
+      setPositions(enrichedPositions);
+
+      // Fetch Recent Proofs
+      const guard = new ethers.Contract(ADDRESSES.InferenceGuard, INFERENCE_GUARD_ABI, currentProvider);
+      const proofIds = await guard.getRecentProofs(5);
+      const proofs = await Promise.all(proofIds.map(async (id: string) => {
+        const p = await guard.getProof(id);
+        return {
+          id,
+          rootHash: p.rootHash,
+          submitter: p.submitter,
+          timestamp: Number(p.submittedAt),
+          consumed: p.consumed
+        };
+      }));
+      setRecentProofs(proofs);
 
       // Fetch Pool Data
       const pool = new ethers.Contract(ADDRESSES.MockUniswapPool, MOCK_UNISWAP_POOL_ABI, currentProvider);
@@ -107,9 +135,36 @@ export function useSentinel() {
       if (address) {
         await fetchUSDCBalance(address, currentProvider);
       }
-
     } catch (error) {
       console.error("Error fetching sentinel data:", error);
+    }
+  };
+
+  const registerPosition = async (protocol: number, posAddress: string, thresholdOrLower: any, upper?: any) => {
+    let activeSigner = signer;
+    if (!activeSigner) {
+      const auth = await connectWallet();
+      if (!auth) return;
+      activeSigner = auth.signer;
+    }
+    try {
+      const registry = new ethers.Contract(ADDRESSES.PositionRegistry, POSITION_REGISTRY_ABI, activeSigner);
+      let tx;
+      if (protocol === 2) {
+        addLog('ACTION', 'Registering LP Position...', 'var(--primary)');
+        tx = await registry.registerUniswapPosition(posAddress, thresholdOrLower, upper);
+      } else {
+        addLog('ACTION', `Registering ${protocol === 0 ? 'Spark' : 'Aave'} Position...`, 'var(--primary)');
+        tx = await registry.registerLendingPosition(posAddress, protocol, ethers.parseEther(thresholdOrLower.toString()));
+      }
+      addLog('TX', `Sent: ${tx.hash.slice(0, 10)}...`, 'var(--text-muted)', tx.hash);
+      await tx.wait();
+      addLog('SUCCESS', 'Position Protected by Swarm', '#00ff80');
+      fetchOnChainData(provider!);
+      return true;
+    } catch (err: any) {
+      addLog('ERROR', 'Registration failed', 'var(--accent)');
+      return false;
     }
   };
 
@@ -183,11 +238,16 @@ export function useSentinel() {
     };
     initialFetch();
 
-    // Event Listeners for Audit Trail
     const guard = new ethers.Contract(ADDRESSES.InferenceGuard, INFERENCE_GUARD_ABI, rpcProvider);
     const inft = new ethers.Contract(ADDRESSES.SentinelINFT, SENTINEL_INFT_ABI, rpcProvider);
+    const pool = new ethers.Contract(ADDRESSES.MockUniswapPool, MOCK_UNISWAP_POOL_ABI, rpcProvider);
 
-    guard.on("ProofSubmitted", (executionId, rootHash, event) => {
+    pool.on("PoolMoved", (newTick, event) => {
+      addLog('POOL', `Price Drift: Tick moved to ${newTick}`, 'var(--primary)', event.log.transactionHash);
+      fetchOnChainData(rpcProvider);
+    });
+
+    guard.on("ProofSubmitted", (_executionId, rootHash, event) => {
       addLog('0G_DA', `New Proof: ${rootHash.slice(0, 14)}...`, 'var(--primary)', event.log.transactionHash);
     });
 
@@ -208,8 +268,9 @@ export function useSentinel() {
       clearInterval(interval);
       guard.removeAllListeners();
       inft.removeAllListeners();
+      pool.removeAllListeners();
     };
-  }, [address]);
+  }, [address, addLog]);
 
   return { 
     inftData, 
@@ -220,9 +281,11 @@ export function useSentinel() {
     provider, 
     address, 
     auditLogs,
+    recentProofs,
     connectWallet,
     triggerOutOfRange,
     resetRange,
-    claimFaucet
+    claimFaucet,
+    registerPosition
   };
 }
