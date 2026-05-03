@@ -1,0 +1,11 @@
+export const ADDRESSES = {
+  SentinelINFT: "0x1A686bb2b8453A543ECA148bDbdE4155EB56a7B1",
+  PositionRegistry: "0x22D6e5c83b1fE929F6572b84C4dBA63e6607aE2A",
+  InferenceGuard: "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5",
+  MockUniswapPool: "0x6111c3eb73CB49216556A0080e5C59086a5f7794",
+  MockUSDC: "0x7c0B4F303f03dA90fE9790cf328B03414b71DF69",
+  KeeperHubPayment: "0xAa676ad3c4502A656FfCB678259c90FaB5E9f9Be"
+};
+
+export const CHAIN_ID = 16602;
+export const RPC_URL = "https://evmrpc-testnet.0g.ai";
