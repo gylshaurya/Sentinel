@@ -417,7 +417,7 @@ The Swarm Coordinator's learned behavior (risk thresholds, decision quality, str
 | **KeeperHub** | Guaranteed execution layer — MCP, x402, Turnkey, marketplace |
 | **Hardhat** | Contract development and testing |
 | **ethers.js v6** | On-chain interaction |
-| **React + Vite** | Guardian Console frontend |
+| **vanilla** | Guardian Console frontend |
 | **OpenZeppelin** | ERC-721 base for SentinelINFT |
 
 ---
