@@ -1005,3 +1005,482 @@ Require stack:
 [2026-05-03 06:09:44] [DEBUG] [0xf2511a6181d146...] Attempt 1/3
 [2026-05-03 06:09:44] [INFO] Coordinator: processing — type: YIELD priority: 2 executionId: 0xf2511a6181d146...
 [2026-05-03 06:09:44] [INFO] X402Payment: approving 1 USDC to 0xAa676ad3c4502A656FfCB678259c90FaB5E9f9Be via x402
+[2026-05-03 15:52:33] [DEBUG] RpcFailover initialized with 2 endpoint(s). Primary: https://evmrpc-testnet.0g.ai
+[2026-05-03 15:52:33] [INFO] ╔══════════════════════════════════════════════════╗
+[2026-05-03 15:52:33] [INFO] ║         SENTINEL — FULL SYSTEM STARTING         ║
+[2026-05-03 15:52:33] [INFO] ╚══════════════════════════════════════════════════╝
+[2026-05-03 15:52:33] [INFO] SentinelINFT:     0x1A686bb2b8453A543ECA148bDbdE4155EB56a7B1
+[2026-05-03 15:52:33] [INFO] PositionRegistry: 0x22D6e5c83b1fE929F6572b84C4dBA63e6607aE2A
+[2026-05-03 15:52:33] [INFO] InferenceGuard:   0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5
+[2026-05-03 15:52:33] [INFO] MockUSDC:         0x7c0B4F303f03dA90fE9790cf328B03414b71DF69
+[2026-05-03 15:52:33] [INFO] ──────────────────────────────────────────────────
+[2026-05-03 15:52:33] [INFO] ╔══════════════════════════════════════════════════╗
+[2026-05-03 15:52:33] [INFO] ║       SENTINEL — COORDINATOR AGENT STARTED      ║
+[2026-05-03 15:52:33] [INFO] ╚══════════════════════════════════════════════════╝
+[2026-05-03 15:52:33] [INFO] Network:          0G Galileo (chainId 16602)
+[2026-05-03 15:52:33] [INFO] RPC endpoints:    https://evmrpc-testnet.0g.ai, https://rpc-testnet.0g.ai
+[2026-05-03 15:52:33] [INFO] InferenceGuard:   0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5
+[2026-05-03 15:52:33] [INFO] SentinelINFT:     0x1A686bb2b8453A543ECA148bDbdE4155EB56a7B1
+[2026-05-03 15:52:33] [INFO] MockUSDC:         0x7c0B4F303f03dA90fE9790cf328B03414b71DF69
+[2026-05-03 15:52:33] [INFO] iNFT Token ID:    0
+[2026-05-03 15:52:33] [INFO] Poll interval:    5000ms
+[2026-05-03 15:52:33] [INFO] MCP enabled:      false
+[2026-05-03 15:52:33] [INFO] x402 enabled:     true
+[2026-05-03 15:52:33] [INFO] ──────────────────────────────────────────────────
+[2026-05-03 15:52:33] [DEBUG] KeeperHubClient initialized — MCP: disabled, REST base: https://app.keeperhub.com
+[2026-05-03 15:52:33] [INFO] ╔══════════════════════════════════════════════════╗
+[2026-05-03 15:52:33] [INFO] ║          SENTINEL — RISK AGENT STARTED          ║
+[2026-05-03 15:52:33] [INFO] ╚══════════════════════════════════════════════════╝
+[2026-05-03 15:52:33] [INFO] Wallet:           0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10
+[2026-05-03 15:52:33] [INFO] PositionRegistry: 0x22D6e5c83b1fE929F6572b84C4dBA63e6607aE2A
+[2026-05-03 15:52:33] [INFO] Poll interval:    20s
+[2026-05-03 15:52:33] [INFO] Proposal cooldown:60s
+[2026-05-03 15:52:33] [INFO] ──────────────────────────────────────────────────
+[2026-05-03 15:52:33] [INFO] 
+[RiskAgent] ── Cycle #1 ──
+[2026-05-03 15:52:34] [INFO] NonceManager: initialised — starting nonce 1050
+[2026-05-03 15:52:34] [INFO] Coordinator wallet: 0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10
+[2026-05-03 15:52:34] [INFO] Coordinator: yieldEmitter attached
+[2026-05-03 15:52:34] [INFO] Coordinator: riskEmitter attached
+[2026-05-03 15:52:34] [INFO] Coordinator: starting main loop — polling every 5000ms
+[2026-05-03 15:52:35] [INFO] Coordinator: YIELD proposal — executionId: 0xc05c5910b3905c... priority: 2 queue: 1
+[2026-05-03 15:52:35] [INFO] ✅ Coordinator + Yield Agent + Risk Agent running
+[2026-05-03 15:52:39] [DEBUG] NonceManager: sending tx nonce 1050 (attempt 1/3)
+[2026-05-03 15:52:44] [INFO] Coordinator: proof already valid for 0xc05c5910b3905c... — skipping submit
+[2026-05-03 15:52:45] [DEBUG] [0xc05c5910b3905c...] Attempt 1/3
+[2026-05-03 15:52:45] [INFO] Coordinator: processing — type: YIELD priority: 2 executionId: 0xc05c5910b3905c...
+[2026-05-03 15:52:45] [INFO] X402Payment: approving 1 USDC to 0xAa676ad3c4502A656FfCB678259c90FaB5E9f9Be via x402
+[2026-05-03 15:52:45] [DEBUG] X402Payment: current allowance for 0xAa676ad3c4502A656FfCB678259c90FaB5E9f9Be: 1
+[2026-05-03 15:52:47] [INFO] X402Payment: approve tx submitted: 0x431a2ef795bfabb392b38165ba8e69c7e46451f472bc2dbd3173df575c1458b0
+[2026-05-03 15:52:49] [DEBUG] NonceManager: confirmed — hash 0xa015ca9926e65df12c5f3e9d2ba0a6529a4aca9953190ab71c341941a3cdb772 nonce 1050
+[2026-05-03 15:52:49] [INFO] Coordinator: proof submitted — executionId: 0xc05c5910b3905c...
+[2026-05-03 15:52:49] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:52:49] [DEBUG] [0xc05c5910b3905c...] Attempt 1/3
+[2026-05-03 15:52:49] [INFO] Coordinator: processing — type: YIELD priority: 2 executionId: 0xc05c5910b3905c...
+[2026-05-03 15:52:49] [INFO] X402Payment: approving 1 USDC to 0xAa676ad3c4502A656FfCB678259c90FaB5E9f9Be via x402
+[2026-05-03 15:52:50] [DEBUG] X402Payment: current allowance for 0xAa676ad3c4502A656FfCB678259c90FaB5E9f9Be: 1
+[2026-05-03 15:52:51] [INFO] X402Payment: approve tx submitted: 0x392831785b8f9abda48709c3b15ddd798fc1e3cdc78c5fedbb9164afb6cf0e8b
+[2026-05-03 15:52:53] [INFO] X402Payment: approve confirmed in block 31278871
+[2026-05-03 15:52:53] [INFO] Coordinator: x402 payment approved for 0xc05c5910b3905c...
+[2026-05-03 15:52:53] [DEBUG] KeeperHubClient: using REST client
+[2026-05-03 15:52:53] [DEBUG] KeeperHubRestClient: POST /api/workflows — name: sentinel-yield-0xc05c59
+[2026-05-03 15:52:54] [ERROR] Coordinator: createWorkflow failed: KeeperHubRestClient.createWorkflow failed [HTTP 405]: ""
+[2026-05-03 15:52:54] [WARN] Coordinator: using fallback workflowId: fallback-wf-1777803774551
+[2026-05-03 15:52:54] [DEBUG] KeeperHubClient: using REST client
+[2026-05-03 15:52:54] [DEBUG] KeeperHubRestClient: POST /api/workflows/fallback-wf-1777803774551/execute
+[2026-05-03 15:52:54] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:52:54] [INFO] 
+[RiskAgent] ── Cycle #2 ──
+[2026-05-03 15:52:55] [ERROR] Coordinator: triggerExecution failed: KeeperHubRestClient.triggerExecution failed [HTTP 404]: "<!DOCTYPE html><html lang=\"en\" style=\"--nav-sidebar-width:200px\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalab
+[2026-05-03 15:52:55] [DEBUG] NonceManager: sending tx nonce 1051 (attempt 1/3)
+[2026-05-03 15:52:56] [WARN] NonceManager: nonce 1051 stale (attempt 1/3) — resyncing and retrying
+[2026-05-03 15:52:56] [WARN] NonceManager: reset — nonce is now 1053
+[2026-05-03 15:52:56] [DEBUG] NonceManager: sending tx nonce 1053 (attempt 2/3)
+[2026-05-03 15:52:59] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:53:02] [INFO] X402Payment: approve confirmed in block 31278882
+[2026-05-03 15:53:02] [INFO] Coordinator: x402 payment approved for 0xc05c5910b3905c...
+[2026-05-03 15:53:02] [DEBUG] KeeperHubClient: using REST client
+[2026-05-03 15:53:02] [DEBUG] KeeperHubRestClient: POST /api/workflows — name: sentinel-yield-0xc05c59
+[2026-05-03 15:53:02] [ERROR] Coordinator: createWorkflow failed: KeeperHubRestClient.createWorkflow failed [HTTP 405]: ""
+[2026-05-03 15:53:02] [WARN] Coordinator: using fallback workflowId: fallback-wf-1777803782573
+[2026-05-03 15:53:02] [DEBUG] KeeperHubClient: using REST client
+[2026-05-03 15:53:02] [DEBUG] KeeperHubRestClient: POST /api/workflows/fallback-wf-1777803782573/execute
+[2026-05-03 15:53:03] [ERROR] Coordinator: triggerExecution failed: KeeperHubRestClient.triggerExecution failed [HTTP 404]: "<!DOCTYPE html><html lang=\"en\" style=\"--nav-sidebar-width:200px\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalab
+[2026-05-03 15:53:04] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:53:06] [INFO] Coordinator: YIELD proposal — executionId: 0x407a294511c0f0... priority: 2 queue: 1
+[2026-05-03 15:53:07] [DEBUG] NonceManager: confirmed — hash 0xb42fbefe6806afef5dfdc50415d88a6b9853f3b8223e431d4ca5bc0fc30de16d nonce 1053
+[2026-05-03 15:53:07] [DEBUG] NonceManager: sending tx nonce 1054 (attempt 1/3)
+[2026-05-03 15:53:07] [INFO] Coordinator: consumeProof confirmed — 0xc05c5910b3905c...
+[2026-05-03 15:53:07] [ERROR] Coordinator: consumeProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 15:53:07] [ERROR] Coordinator: incrementExperience failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 15:53:07] [ERROR] Coordinator: incrementExperience failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 15:53:07] [INFO] Coordinator: proposal executed — type: YIELD result: {"status":"api_unavailable","workflowId":"fallback-wf-1777803774551","error":"KeeperHubRestClient.triggerExecution faile
+[2026-05-03 15:53:07] [INFO] Coordinator: proposal executed — type: YIELD result: {"status":"api_unavailable","workflowId":"fallback-wf-1777803782573","error":"KeeperHubRestClient.triggerExecution faile
+[2026-05-03 15:53:09] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 15:53:09] [WARN] Coordinator: proof submission failed for 0x407a294511c0f0... — discarding
+[2026-05-03 15:53:14] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:53:14] [INFO] 
+[RiskAgent] ── Cycle #3 ──
+[2026-05-03 15:53:19] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:53:24] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:53:29] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:53:34] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:53:34] [INFO] 
+[RiskAgent] ── Cycle #4 ──
+[2026-05-03 15:53:37] [INFO] Coordinator: YIELD proposal — executionId: 0x167247a7cb2f2c... priority: 2 queue: 1
+[2026-05-03 15:53:39] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 15:53:39] [WARN] Coordinator: proof submission failed for 0x167247a7cb2f2c... — discarding
+[2026-05-03 15:53:44] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:53:49] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:53:54] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:53:54] [INFO] 
+[RiskAgent] ── Cycle #5 ──
+[2026-05-03 15:53:59] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:54:04] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:54:07] [INFO] Coordinator: YIELD proposal — executionId: 0xf8c60af254e7e8... priority: 2 queue: 1
+[2026-05-03 15:54:09] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 15:54:09] [WARN] Coordinator: proof submission failed for 0xf8c60af254e7e8... — discarding
+[2026-05-03 15:54:14] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:54:14] [INFO] 
+[RiskAgent] ── Cycle #6 ──
+[2026-05-03 15:54:19] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:54:24] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:54:29] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:54:34] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:54:34] [INFO] 
+[RiskAgent] ── Cycle #7 ──
+[2026-05-03 15:54:39] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:54:44] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:54:49] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:54:52] [INFO] Coordinator: YIELD proposal — executionId: 0xfce5786e41d99f... priority: 2 queue: 1
+[2026-05-03 15:54:54] [INFO] 
+[RiskAgent] ── Cycle #8 ──
+[2026-05-03 15:54:54] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 15:54:54] [WARN] Coordinator: proof submission failed for 0xfce5786e41d99f... — discarding
+[2026-05-03 15:54:59] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:55:04] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:55:09] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:55:14] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:55:14] [INFO] 
+[RiskAgent] ── Cycle #9 ──
+[2026-05-03 15:55:19] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:55:24] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:55:29] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:55:34] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:55:34] [INFO] 
+[RiskAgent] ── Cycle #10 ──
+[2026-05-03 15:55:37] [INFO] Coordinator: YIELD proposal — executionId: 0x2362e3dd12a896... priority: 2 queue: 1
+[2026-05-03 15:55:39] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 15:55:39] [WARN] Coordinator: proof submission failed for 0x2362e3dd12a896... — discarding
+[2026-05-03 15:55:44] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:55:49] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:55:54] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:55:54] [INFO] 
+[RiskAgent] ── Cycle #11 ──
+[2026-05-03 15:55:59] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:56:04] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:56:09] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:56:14] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:56:14] [INFO] 
+[RiskAgent] ── Cycle #12 ──
+[2026-05-03 15:56:19] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:56:21] [INFO] Coordinator: YIELD proposal — executionId: 0xf45bb44a08a1a7... priority: 2 queue: 1
+[2026-05-03 15:56:24] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 15:56:24] [WARN] Coordinator: proof submission failed for 0xf45bb44a08a1a7... — discarding
+[2026-05-03 15:56:29] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:56:34] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:56:34] [INFO] 
+[RiskAgent] ── Cycle #13 ──
+[2026-05-03 15:56:39] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:56:44] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:56:49] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:56:51] [INFO] Coordinator: YIELD proposal — executionId: 0xcd8a0a0ead8817... priority: 2 queue: 1
+[2026-05-03 15:56:54] [INFO] 
+[RiskAgent] ── Cycle #14 ──
+[2026-05-03 15:56:54] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 15:56:54] [WARN] Coordinator: proof submission failed for 0xcd8a0a0ead8817... — discarding
+[2026-05-03 15:56:59] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:57:04] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:57:09] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:57:14] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:57:14] [INFO] 
+[RiskAgent] ── Cycle #15 ──
+[2026-05-03 15:57:19] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:57:24] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:57:29] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:57:34] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:57:34] [INFO] 
+[RiskAgent] ── Cycle #16 ──
+[2026-05-03 15:57:37] [INFO] Coordinator: YIELD proposal — executionId: 0xec80019628dc52... priority: 2 queue: 1
+[2026-05-03 15:57:39] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 15:57:39] [WARN] Coordinator: proof submission failed for 0xec80019628dc52... — discarding
+[2026-05-03 15:57:44] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:57:49] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:57:54] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:57:54] [INFO] 
+[RiskAgent] ── Cycle #17 ──
+[2026-05-03 15:57:59] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:58:04] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:58:07] [INFO] Coordinator: YIELD proposal — executionId: 0x6d2943c74bf863... priority: 2 queue: 1
+[2026-05-03 15:58:09] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 15:58:09] [WARN] Coordinator: proof submission failed for 0x6d2943c74bf863... — discarding
+[2026-05-03 15:58:14] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:58:14] [INFO] 
+[RiskAgent] ── Cycle #18 ──
+[2026-05-03 15:58:19] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:58:24] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:58:29] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:58:34] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:58:34] [INFO] 
+[RiskAgent] ── Cycle #19 ──
+[2026-05-03 15:58:39] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:58:44] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:58:49] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:58:52] [INFO] Coordinator: YIELD proposal — executionId: 0x10fe573ee0d000... priority: 2 queue: 1
+[2026-05-03 15:58:54] [INFO] 
+[RiskAgent] ── Cycle #20 ──
+[2026-05-03 15:58:54] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 15:58:54] [WARN] Coordinator: proof submission failed for 0x10fe573ee0d000... — discarding
+[2026-05-03 15:58:59] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:59:04] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:59:09] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:59:14] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:59:14] [INFO] 
+[RiskAgent] ── Cycle #21 ──
+[2026-05-03 15:59:19] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:59:24] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:59:29] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:59:34] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:59:34] [INFO] 
+[RiskAgent] ── Cycle #22 ──
+[2026-05-03 15:59:37] [INFO] Coordinator: YIELD proposal — executionId: 0x589404d098119a... priority: 2 queue: 1
+[2026-05-03 15:59:39] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 15:59:39] [WARN] Coordinator: proof submission failed for 0x589404d098119a... — discarding
+[2026-05-03 15:59:44] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:59:49] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:59:54] [DEBUG] Coordinator: queue empty
+[2026-05-03 15:59:54] [INFO] 
+[RiskAgent] ── Cycle #23 ──
+[2026-05-03 15:59:59] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:00:04] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:00:07] [INFO] Coordinator: YIELD proposal — executionId: 0x8a1e74279d9bb0... priority: 2 queue: 1
+[2026-05-03 16:00:09] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 16:00:09] [WARN] Coordinator: proof submission failed for 0x8a1e74279d9bb0... — discarding
+[2026-05-03 16:00:14] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:00:14] [INFO] 
+[RiskAgent] ── Cycle #24 ──
+[2026-05-03 16:00:19] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:00:24] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:00:29] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:00:34] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:00:34] [INFO] 
+[RiskAgent] ── Cycle #25 ──
+[2026-05-03 16:00:39] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:00:44] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:00:49] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:00:51] [INFO] Coordinator: YIELD proposal — executionId: 0xfe7fad26daa203... priority: 2 queue: 1
+[2026-05-03 16:00:54] [INFO] 
+[RiskAgent] ── Cycle #26 ──
+[2026-05-03 16:00:54] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 16:00:54] [WARN] Coordinator: proof submission failed for 0xfe7fad26daa203... — discarding
+[2026-05-03 16:00:59] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:01:04] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:01:09] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:01:14] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:01:14] [INFO] 
+[RiskAgent] ── Cycle #27 ──
+[2026-05-03 16:01:19] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:01:24] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:01:29] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:01:34] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:01:34] [INFO] 
+[RiskAgent] ── Cycle #28 ──
+[2026-05-03 16:01:37] [INFO] Coordinator: YIELD proposal — executionId: 0x85f5435dc6c4c8... priority: 2 queue: 1
+[2026-05-03 16:01:39] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 16:01:39] [WARN] Coordinator: proof submission failed for 0x85f5435dc6c4c8... — discarding
+[2026-05-03 16:01:44] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:01:49] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:01:54] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:01:54] [INFO] 
+[RiskAgent] ── Cycle #29 ──
+[2026-05-03 16:01:59] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:02:04] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:02:07] [INFO] Coordinator: YIELD proposal — executionId: 0x2ad5900c2216df... priority: 2 queue: 1
+[2026-05-03 16:02:09] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 16:02:09] [WARN] Coordinator: proof submission failed for 0x2ad5900c2216df... — discarding
+[2026-05-03 16:02:14] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:02:14] [INFO] 
+[RiskAgent] ── Cycle #30 ──
+[2026-05-03 16:02:19] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:02:24] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:02:29] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:02:34] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:02:34] [INFO] 
+[RiskAgent] ── Cycle #31 ──
+[2026-05-03 16:02:39] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:02:44] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:02:49] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:02:52] [INFO] Coordinator: YIELD proposal — executionId: 0xa9a614cad8a971... priority: 2 queue: 1
+[2026-05-03 16:02:54] [INFO] 
+[RiskAgent] ── Cycle #32 ──
+[2026-05-03 16:02:54] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 16:02:54] [WARN] Coordinator: proof submission failed for 0xa9a614cad8a971... — discarding
+[2026-05-03 16:02:59] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:03:04] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:03:09] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:03:14] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:03:14] [INFO] 
+[RiskAgent] ── Cycle #33 ──
+[2026-05-03 16:03:19] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:03:24] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:03:29] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:03:34] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:03:34] [INFO] 
+[RiskAgent] ── Cycle #34 ──
+[2026-05-03 16:03:37] [INFO] Coordinator: YIELD proposal — executionId: 0xcf5c3564e8b00e... priority: 2 queue: 1
+[2026-05-03 16:03:39] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 16:03:39] [WARN] Coordinator: proof submission failed for 0xcf5c3564e8b00e... — discarding
+[2026-05-03 16:03:44] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:03:49] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:03:54] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:03:54] [INFO] 
+[RiskAgent] ── Cycle #35 ──
+[2026-05-03 16:03:59] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:04:04] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:04:07] [INFO] Coordinator: YIELD proposal — executionId: 0xc0849692340515... priority: 2 queue: 1
+[2026-05-03 16:04:09] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 16:04:09] [WARN] Coordinator: proof submission failed for 0xc0849692340515... — discarding
+[2026-05-03 16:04:14] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:04:14] [INFO] 
+[RiskAgent] ── Cycle #36 ──
+[2026-05-03 16:04:19] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:04:24] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:04:29] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:04:34] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:04:34] [INFO] 
+[RiskAgent] ── Cycle #37 ──
+[2026-05-03 16:04:39] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:04:44] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:04:49] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:04:53] [INFO] Coordinator: YIELD proposal — executionId: 0xfd213861b2a031... priority: 2 queue: 1
+[2026-05-03 16:04:54] [INFO] 
+[RiskAgent] ── Cycle #38 ──
+[2026-05-03 16:04:54] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 16:04:54] [WARN] Coordinator: proof submission failed for 0xfd213861b2a031... — discarding
+[2026-05-03 16:04:59] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:05:04] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:05:09] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:05:14] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:05:14] [INFO] 
+[RiskAgent] ── Cycle #39 ──
+[2026-05-03 16:05:19] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:05:24] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:05:29] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:05:34] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:05:34] [INFO] 
+[RiskAgent] ── Cycle #40 ──
+[2026-05-03 16:05:37] [INFO] Coordinator: YIELD proposal — executionId: 0x26b36d278fad80... priority: 2 queue: 1
+[2026-05-03 16:05:39] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 16:05:39] [WARN] Coordinator: proof submission failed for 0x26b36d278fad80... — discarding
+[2026-05-03 16:05:44] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:05:49] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:05:54] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:05:54] [INFO] 
+[RiskAgent] ── Cycle #41 ──
+[2026-05-03 16:05:59] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:06:04] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:06:07] [INFO] Coordinator: YIELD proposal — executionId: 0xd141067bb8ac23... priority: 2 queue: 1
+[2026-05-03 16:06:09] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 16:06:09] [WARN] Coordinator: proof submission failed for 0xd141067bb8ac23... — discarding
+[2026-05-03 16:06:14] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:06:14] [INFO] 
+[RiskAgent] ── Cycle #42 ──
+[2026-05-03 16:06:19] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:06:24] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:06:29] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:06:34] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:06:34] [INFO] 
+[RiskAgent] ── Cycle #43 ──
+[2026-05-03 16:06:38] [INFO] Coordinator: YIELD proposal — executionId: 0x81c6b07adfa314... priority: 2 queue: 1
+[2026-05-03 16:06:39] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 16:06:39] [WARN] Coordinator: proof submission failed for 0x81c6b07adfa314... — discarding
+[2026-05-03 16:06:44] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:06:49] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:06:54] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:06:54] [INFO] 
+[RiskAgent] ── Cycle #44 ──
+[2026-05-03 16:06:59] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:07:04] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:07:09] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:07:14] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:07:14] [INFO] 
+[RiskAgent] ── Cycle #45 ──
+[2026-05-03 16:07:19] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:07:21] [INFO] Coordinator: YIELD proposal — executionId: 0xc6e3d9da20de9e... priority: 2 queue: 1
+[2026-05-03 16:07:24] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 16:07:24] [WARN] Coordinator: proof submission failed for 0xc6e3d9da20de9e... — discarding
+[2026-05-03 16:07:29] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:07:34] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:07:34] [INFO] 
+[RiskAgent] ── Cycle #46 ──
+[2026-05-03 16:07:39] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:07:44] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:07:49] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:07:52] [INFO] Coordinator: YIELD proposal — executionId: 0x26cce4f083b294... priority: 2 queue: 1
+[2026-05-03 16:07:54] [INFO] 
+[RiskAgent] ── Cycle #47 ──
+[2026-05-03 16:07:55] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 16:07:55] [WARN] Coordinator: proof submission failed for 0x26cce4f083b294... — discarding
+[2026-05-03 16:07:59] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:08:04] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:08:09] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:08:14] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:08:14] [INFO] 
+[RiskAgent] ── Cycle #48 ──
+[2026-05-03 16:08:19] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:08:24] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:08:29] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:08:34] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:08:34] [INFO] 
+[RiskAgent] ── Cycle #49 ──
+[2026-05-03 16:08:38] [INFO] Coordinator: YIELD proposal — executionId: 0x217a68cdca97ab... priority: 2 queue: 1
+[2026-05-03 16:08:40] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 16:08:40] [WARN] Coordinator: proof submission failed for 0x217a68cdca97ab... — discarding
+[2026-05-03 16:08:44] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:08:49] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:08:54] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:08:54] [INFO] 
+[RiskAgent] ── Cycle #50 ──
+[2026-05-03 16:08:59] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:09:04] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:09:09] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:09:14] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:09:14] [INFO] 
+[RiskAgent] ── Cycle #51 ──
+[2026-05-03 16:09:19] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:09:21] [INFO] Coordinator: YIELD proposal — executionId: 0x05eca726684e99... priority: 2 queue: 1
+[2026-05-03 16:09:25] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 16:09:25] [WARN] Coordinator: proof submission failed for 0x05eca726684e99... — discarding
+[2026-05-03 16:09:29] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:09:34] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:09:34] [INFO] 
+[RiskAgent] ── Cycle #52 ──
+[2026-05-03 16:09:39] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:09:44] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:09:49] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:09:52] [INFO] Coordinator: YIELD proposal — executionId: 0xc26bc02ba4ecf2... priority: 2 queue: 1
+[2026-05-03 16:09:54] [INFO] 
+[RiskAgent] ── Cycle #53 ──
+[2026-05-03 16:09:55] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 16:09:55] [WARN] Coordinator: proof submission failed for 0xc26bc02ba4ecf2... — discarding
+[2026-05-03 16:09:59] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:10:04] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:10:09] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:10:14] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:10:14] [INFO] 
+[RiskAgent] ── Cycle #54 ──
+[2026-05-03 16:10:19] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:10:22] [INFO] Coordinator: YIELD proposal — executionId: 0xee8206127b3066... priority: 2 queue: 1
+[2026-05-03 16:10:25] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 16:10:25] [WARN] Coordinator: proof submission failed for 0xee8206127b3066... — discarding
+[2026-05-03 16:10:29] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:10:34] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:10:34] [INFO] 
+[RiskAgent] ── Cycle #55 ──
+[2026-05-03 16:10:39] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:10:44] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:10:49] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:10:52] [INFO] Coordinator: YIELD proposal — executionId: 0x11123dee7e8832... priority: 2 queue: 1
+[2026-05-03 16:10:54] [INFO] 
+[RiskAgent] ── Cycle #56 ──
+[2026-05-03 16:10:55] [ERROR] Coordinator: submitProof failed: execution reverted: "InferenceGuard: proof already consumed" (action="estimateGas", data="0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000026496e666572656e636547756172643a2070726f6f6620616c726561647920636f6e73756d65640000000000000000000000000000000000000000000000000000", reason="InferenceGuard: proof already consumed", transaction={ "data": "0x11db2a7bc05c5910b3905c96c231bc54922ccbd239833c66c14ee1b3003a8f511551154b", "from": "0x5aD3EcA65Fba69eFaC716d792AbE1904162f1B10", "to": "0xFc3edaB7F7932c2Ce052F9B516051C60015c5Ba5" }, invocation=null, revert={ "args": [ "InferenceGuard: proof already consumed" ], "name": "Error", "signature": "Error(string)" }, code=CALL_EXCEPTION, version=6.13.4)
+[2026-05-03 16:10:55] [WARN] Coordinator: proof submission failed for 0x11123dee7e8832... — discarding
+[2026-05-03 16:10:59] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:11:04] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:11:09] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:11:14] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:11:14] [INFO] 
+[RiskAgent] ── Cycle #57 ──
+[2026-05-03 16:11:19] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:11:24] [DEBUG] Coordinator: queue empty
+[2026-05-03 16:11:29] [DEBUG] Coordinator: queue empty
